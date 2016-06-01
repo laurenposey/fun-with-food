@@ -5,45 +5,45 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Food delivery</title>
   </head>
   <body>
     <div class="container">
       <div>
-        <form id="something">
+        <form id="thing">
           <div class="form-group" id="some">
 
           </div>
 
           <div class="form-group">
-            <select class="form-control" id="beverage">
-              <option>Coffee</option>
-              <option>Tea</option>
-              <option>Kombucha</option>
-              <option>Water</option>
+            <h1>Select your dish and delivery date:</h1>
+            <select class="form-control" id="entree">
+              <option>Pizza</option>
+              <option>Poke Bowl</option>
+              <option>Pasta</option>
             </select>
           </div>
 
-          <div class="radio">
+          <div class="radio" id="condim">
+            <h1>Condiments</h1>
             <label>
-              <input type="radio" name="flavor" value="chocolate" checked>Chocolate
+              <input type="radio" name="condim" value="sauce" checked>Sauce
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="vanilla">Vanilla
+              <input type="radio" name="condim" value="furikake">Rice Seasoning
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
-              Cookies & Cream
+              <input type="radio" name="condim" value="hotSauce">Hot Sauce
             </label>
           </div>
 
           <div class="form-group">
-            <label for="born">Date of birth:</label>
-            <input id="born" class="form-control" type="date">
+            <label for="delivery">Date of Delivery:</label>
+            <input id="delivery" class="form-control" type="date">
           </div>
 
           <div class="form-group">
@@ -51,8 +51,12 @@
             <input id="color" class="form-control" type="color">
           </div>
 
-
+        <button type="submit" class="btn">Submit</button>
         </form>
+      </div>
+
+      <div id="something">
+        <h1>Congratulations!</h1>
       </div>
     </div>
   </body>

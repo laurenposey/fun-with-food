@@ -1,7 +1,18 @@
-var beverage = $("#beverage").val();
+$(document).ready(function() {
+  $("form#thing").submit(function(event) {
 
-var flavor = $("input:radio[name=flavor]:checked").val();
+    var entree = $("#entree").val();
+    var condim = $("input:radio[name=condim]:checked").val();
+    var delivery = $("#delivery").val();
+    var favoriteColor = $("#color").val();
 
-var dob = $("#born").val();
+    $(".entree").text(entree);
+    $(".condim").text(condim);
+    $(".delivery").text(delivery);
+    $(".favoriteColor").text(favoriteColor);
 
-var favoriteColor = $("#color").val();
+    $("#something").show();
+
+    event.preventDefault();
+  });
+});
